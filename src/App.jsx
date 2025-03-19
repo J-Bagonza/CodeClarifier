@@ -37,7 +37,12 @@ export default function App() {
           value={code}
           onChange={(e) => setCode(e.target.value)}
         ></textarea>
-        <input type="file" accept=".txt,.js,.py,.java,.cpp" className="mt-3 block" onChange={handleFileUpload} />
+        <input 
+          type="file" 
+          accept=".txt,.js,.py,.java,.cpp" 
+          className="mt-3 block border-2 border-orange-500 text-blue-400 p-2 rounded-lg cursor-pointer" 
+          onChange={handleFileUpload} 
+        />
       </motion.div>
 
       {/* Action Buttons */}
