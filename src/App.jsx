@@ -16,8 +16,22 @@ export default function App() {
     }
   };
 
-  const handleProcess = (action) => {
-    setOutput(`Processing: ${action}\n\n${code}`);
+  const handleProcess = async (action) => {
+    if (!code.trim()) return;
+  
+    try {
+      const response = await axios.post("https://api.openai.com/v1/chat/completions", {
+        model: "gpt-4",
+        messages: [{ role: "user", content: `${action} this code:\n${code}` }],
+        temperature: 0.7,
+      }, {
+        headers: { "Authorization": `Bearer YOUR_OPENAI_API_KEY` }
+      });
+  
+      setOutput(response.data.choices[0].message.content);
+    } catch (error) {
+      setOutput("Error processing the request. Please try again.");
+    }
   };
 
   return (
