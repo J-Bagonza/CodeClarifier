@@ -2,6 +2,7 @@ import { useState } from "react";
 import { AiOutlineFileText } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { FaHome, FaCog, FaInfoCircle } from "react-icons/fa";
+import axios from "axios";
 
 export default function App() {
   const [code, setCode] = useState("");
