@@ -43,7 +43,7 @@ export default function App() {
         <h1>Code Clarified</h1>
       </motion.header>
 
-      {/* */}
+      
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="w-full max-w-2xl bg-gray-800 p-4 rounded-lg shadow-md">
         <textarea
           className="w-full bg-gray-700 p-3 rounded-lg focus:outline-none"
