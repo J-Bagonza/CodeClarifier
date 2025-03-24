@@ -66,7 +66,7 @@ export default function App() {
         <button onClick={() => handleProcess("Comment Code")} className="bg-yellow-500 px-4 py-2 rounded-lg hover:bg-yellow-600">Comment Code</button>
       </motion.div>
 
-      {/* Ou */}
+      {/* O */}
       {output && (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="w-full max-w-2xl bg-gray-800 p-4 rounded-lg shadow-md mt-6">
           <h2 className="text-xl font-bold">Output</h2>
