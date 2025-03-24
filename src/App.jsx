@@ -60,14 +60,13 @@ export default function App() {
         />
       </motion.div>
 
-      
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="flex space-x-4 mt-4">
         <button onClick={() => handleProcess("Improve Code")} className="bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600">Improve Code</button>
         <button onClick={() => handleProcess("Document Code")} className="bg-green-500 px-4 py-2 rounded-lg hover:bg-green-600">Document Code</button>
         <button onClick={() => handleProcess("Comment Code")} className="bg-yellow-500 px-4 py-2 rounded-lg hover:bg-yellow-600">Comment Code</button>
       </motion.div>
 
-      {/* Output */}
+      {/* Outpu */}
       {output && (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="w-full max-w-2xl bg-gray-800 p-4 rounded-lg shadow-md mt-6">
           <h2 className="text-xl font-bold">Output</h2>
