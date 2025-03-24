@@ -60,7 +60,7 @@ export default function App() {
         />
       </motion.div>
 
-      {/* Action Butto */}
+      {/* Action Butt */}
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="flex space-x-4 mt-4">
         <button onClick={() => handleProcess("Improve Code")} className="bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-600">Improve Code</button>
         <button onClick={() => handleProcess("Document Code")} className="bg-green-500 px-4 py-2 rounded-lg hover:bg-green-600">Document Code</button>
