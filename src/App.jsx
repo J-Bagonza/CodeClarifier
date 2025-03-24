@@ -74,7 +74,7 @@ export default function App() {
         </motion.div>
       )}
 
-      {/* Floating Navba */}
+      {/* Floating Navb */}
       <motion.nav initial={{ y: 50, opacity: 0 }} animate={{ y: 0, opacity: 1 }} className="fixed bottom-6 bg-gray-800 p-3 rounded-full shadow-lg flex space-x-6">
         <FaHome className="text-2xl text-white cursor-pointer hover:text-blue-400" />
         <FaCog className="text-2xl text-white cursor-pointer hover:text-blue-400" />
